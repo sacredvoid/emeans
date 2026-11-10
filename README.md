@@ -7,9 +7,23 @@ no Faiss or GPU needed.
 On 200k-row datasets it lands within about 1% of scikit-learn's `KMeans()` loss
 and runs 2.4x to 24x faster.
 
+## Install
+
+With [uv](https://docs.astral.sh/uv/) (recommended):
+
+```bash
+uv add git+https://github.com/sacredvoid/emeans          # add to a uv project
+uv pip install git+https://github.com/sacredvoid/emeans  # into the active environment
+uv run --with git+https://github.com/sacredvoid/emeans python   # one-off, no install
+```
+
+With pip:
+
 ```bash
 pip install git+https://github.com/sacredvoid/emeans
 ```
+
+## Quickstart
 
 ```python
 from emeans import EMeans
