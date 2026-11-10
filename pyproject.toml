@@ -1,0 +1,28 @@
+[project]
+name = "emeans"
+version = "0.1.0"
+description = "Fast k-means for scikit-learn: e-means (EMA mini-batch k-means with scaling-law defaults), a drop-in KMeans replacement"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Samanvya Tripathi" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23", "scipy>=1.9", "scikit-learn>=1.6", "threadpoolctl>=3"]
+keywords = ["k-means", "kmeans", "clustering", "e-means", "scikit-learn", "mini-batch", "vector-quantization"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/sacredvoid/emeans"
+Paper = "https://arxiv.org/abs/2611.09501"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
